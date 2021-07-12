@@ -702,6 +702,9 @@ public class XMLResolverConfiguration implements ResolverConfiguration {
             return;
         } else if (feature == ResolverFeature.CACHE) {
             cache = (ResourceCache) value;
+            if (cache == null) {
+                cacheDirectory = null;
+            }
             return;
         }
 

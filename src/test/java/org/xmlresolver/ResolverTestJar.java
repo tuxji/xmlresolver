@@ -60,10 +60,6 @@ public class ResolverTestJar {
             assertTrue(source.getSystemId().startsWith("jar:file:"));
             assertNotNull(source.getByteStream());
             rsource = ((ResolverInputSource) source);
-
-            System.err.println("TESTING:");
-            System.err.println(rsource.resolvedURI);
-
             assertEquals("jar", rsource.resolvedURI.getScheme());
             assertTrue(rsource.resolvedURI.getSchemeSpecificPart().startsWith("file:"));
         } catch (IOException | SAXException ex) {
