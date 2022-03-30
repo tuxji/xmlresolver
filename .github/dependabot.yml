@@ -9,7 +9,7 @@ updates:
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
     # Location of Dockerfile
-    directory: "/docker/"
+    directory: "/docker/xproctests/"
     schedule:
       interval: "daily"
 
