@@ -21,7 +21,7 @@ java {
 
 configurations.all {
   resolutionStrategy {
-    force 'xml-apis:xml-apis:1.4.01'
+    force 'xml-apis:xml-apis:2.0.2'
   }
 }
 
